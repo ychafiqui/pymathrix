@@ -39,9 +39,9 @@ Printing the matrix
 
 
 ## Storing values to the matrix
+```python
 >>> m.assign([[-2, 5.0, 9.2], [1, 7.2, -6.4]])
 >>> print(m)
-```python
 |   -2    5.0    9.2   |
 |    1    7.2   -6.4   |
 ```
