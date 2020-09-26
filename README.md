@@ -1,5 +1,4 @@
-Pymathrix
-=========
+# Pymathrix
 Pymathrix is a python library for matrix objects creation and basic operations.
 
 By using Pymathrix you can:
@@ -10,24 +9,21 @@ By using Pymathrix you can:
 - Transpose a matrix
 - Multiply matrices
 
-Installation
-------------
-This library can be installed by the running the command:
+## Installation
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pymathrix
 ```python
 >>> pip install pymathrix
 ```
 
 
-Usage
------
+## Usage
 Import the library to your python code:
 ```python
 >>> import pymathrix as px
 ```
 
 
-Creation of a matrix object
----------------------------
+## Creation of a matrix object
 ```python
 >>> m = px.matrix(2, 3) # this creates a matrix with 2 rows and 3 columns and initialize them with zoros
 ```
@@ -42,8 +38,7 @@ Printing the matrix
 ```
 
 
-Storing values to the matrix
-----------------------------
+## Storing values to the matrix
 >>> m.assign([[-2, 5.0, 9.2], [1, 7.2, -6.4]])
 >>> print(m)
 ```python
@@ -52,8 +47,7 @@ Storing values to the matrix
 ```
 
 
-Printing a specified row or column
-----------------------------------
+## Printing a specified row or column
 ```python
 >>> m.print_row(1) # prints the first row
 (-2, 5.0, 9.2)
@@ -62,8 +56,7 @@ Printing a specified row or column
 ```
 
 
-Filling the matrix with random values
--------------------------------------
+## Filling the matrix with random values
 ```python
 >>> m.randomize(-10, 10) # this stores random values between -10 and 10 in the matrix
 >>> print(m)
@@ -72,8 +65,7 @@ Filling the matrix with random values
 ```
 
 
-Filling the matrix with the same value
---------------------------------------
+## Filling the matrix with a specified value
 ```python
 >>> m.set_all_to(6)
 |     6      6      6  |
@@ -81,8 +73,7 @@ Filling the matrix with the same value
 ```
 
 
-Transposing a matrix
---------------------
+## Transposing a matrix
 ```python
 >>> m.transpose() # this overrides the 'm' matrix object with its transpose
 ```
@@ -103,8 +94,7 @@ m1 transposed:
 ```
 
 
-Adding two matrices together
-----------------------------
+## Adding two matrices together
 ```python
 >>> m3 = px.matrix.add(m1, m2) # adds the matrices m1 and m2 together and storing the result in m3
 ```
@@ -129,8 +119,7 @@ m1 + m2:
 ```
 
 
-Matrices multiplication
------------------------
+## Matrices multiplication
 ```python
 >>> m3 = matrix.dot(m1, m2) # multiplies the matrix m1 by m2 and storing the result in m3
 ```
