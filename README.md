@@ -12,7 +12,7 @@ By using Pymathrix you can:
 ## Installation
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pymathrix
 ```python
->>> pip install pymathrix
+pip install pymathrix
 ```
 
 
