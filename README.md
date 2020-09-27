@@ -96,7 +96,7 @@ m1 transposed:
 
 ## Adding two matrices together
 ```python
->>> m3 = px.matrix.add(m1, m2) # adds the matrices m1 and m2 together and storing the result in m3
+>>> m3 = px.matrix.add(m1, m2) # adding the matrices m1 and m2 together and storing the result in m3
 ```
 - example:
 ```python
@@ -118,10 +118,34 @@ m1 + m2:
 |   0.0   -0.7    1.2  |
 ```
 
+## Subtracting a matrix from another
+```python
+>>> m3 = px.matrix.subtract(m1, m2) # subtracts the matrices m2 from m1 and stores the result in m3
+```
+- example:
+```python
+>>> m1 = px.matrix(2, 3)
+>>> m2 = px.matrix(2, 3)
+>>> m1.randomize(-1, 1)
+>>> m2.randomize(-1, 1)
+>>> print("m1:\n" + str(m1))
+>>> print("m2:\n" + str(m2))
+>>> print("m1 + m2:\n" + str(px.matrix.subtract(m1, m2)))
+m1:
+|  -0.1   -0.5   -0.6  |
+|  -0.7    0.1    0.7  |
+m2:
+|   0.8   -1.0    0.2  |
+|   0.7   -0.8    0.5  |
+m1 + m2:
+|  -0.9    0.5   -0.8  |
+| -0.14    0.9    0.2  |
+```
+
 
 ## Matrices multiplication
 ```python
->>> m3 = matrix.dot(m1, m2) # multiplies the matrix m1 by m2 and storing the result in m3
+>>> m3 = matrix.dot(m1, m2) # multiplying the matrix m1 by m2 and storing the result in m3
 ```
 - example:
 ```python
