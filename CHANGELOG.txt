@@ -5,7 +5,10 @@ Change log
 - First Release
 
 0.0.3 (27/09/2020)
--Bug fix (assign function)
+- Bug fix (assign function)
 
 0.0.4 (27/09/2020)
--Bug fix (importing bug)
+- Bug fix (importing bug)
+
+0.0.5 (27/09/2020)
+- Added the subtract function (ability to subtract a matrix from another)
