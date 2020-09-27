@@ -1,5 +1,8 @@
 Change log
 ##########
 
-0.0.1 (26/09/2020)
+0.0.2 (26/09/2020)
 - First Release
+
+0.0.3 (27/09/2020)
+-Bug fix (assign function)
