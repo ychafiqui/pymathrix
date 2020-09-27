@@ -14,7 +14,7 @@ class matrix():
         for j in range(len(values[0])):
             nc += 1
         
-        if nr == self.num_rows:
+        if nc == self.num_cols:
             if nr == self.num_rows:
                 self.values = values
             else: print("Number of rows must be equal to " + str(self.num_rows) + ", you entered " + str(nr) + " rows!")
