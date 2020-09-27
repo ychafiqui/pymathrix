@@ -5,4 +5,4 @@ Change log
 - First Release
 
 0.0.3 (27/09/2020)
--Bug fix (assign function)
+- Bug fix (assign function)
