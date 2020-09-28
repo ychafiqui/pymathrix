@@ -5,10 +5,17 @@ Change log
 - First Release
 
 0.0.3 (27/09/2020)
-- Bug fix (assign function)
+- Bug fix (assign() function)
 
 0.0.4 (27/09/2020)
 - Bug fix (importing bug)
 
 0.0.5 (27/09/2020)
 - Added the subtract function (ability to subtract a matrix from another)
+
+0.0.6 (28/09/2020)
+- Added the rows(), cols(), and dim() functions which can be used to modify the number of rows, column or the dimension of a matrix
+- Improved the error handling and messages
+- Improved the assign() function, now it can take a single dimension list or a single numeric value as an argument: assign(2) - assign([1, -6, 5.2])
+- Added the from_row() and from_col() functions which return the row or column of a matrix as a matrix object
+- Added the hadamard_prod() function which performs the hadamard product of two matrices, it can also be used to multiply a matrix by a numeric value
