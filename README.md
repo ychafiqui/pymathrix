@@ -3,7 +3,7 @@ Pymathrix is a python library for matrix objects creation and basic operations.
 
 By using Pymathrix you can:
 
-- Create matrices an assign values to them in python
+- Create matrices and assign values to them in python
 - View a matrix object values in the command prompt
 - Perform addition, subtraction and the Hadamard product to matrices
 - Transpose matrices
