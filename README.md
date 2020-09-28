@@ -25,7 +25,7 @@ Import the library to your python code:
 
 ## Creation of a matrix object
 ```python
->>> m = px.matrix(2, 3) # this creates a matrix with 2 rows and 3 columns and initialize them with zoros
+>>> m = px.matrix(2, 3) # this creates a matrix with 2 rows and 3 columns and initialize its values with zoros
 ```
 
 
@@ -40,18 +40,18 @@ Printing the matrix
 
 ## Storing values to the matrix
 ```python
->>> m.assign([[-2, 5.0, 9.2], [1, 7.2, -6.4]]) # storing 2 dimensional list
+>>> m.assign([[-2, 5.0, 9.2], [1, 7.2, -6.4]]) # storing 2 dimentional list (matrix with 2 rows and 3 columns)
 >>> print(m)
 |   -2    5.0    9.2   |
 |    1    7.2   -6.4   |
 
 >>> m1 = px.matrix(1, 4)
->>> m1.assign([2.5, -4.9, 0.8, 5.6]) # storing 1 dimensional list (matrix with one row)
+>>> m1.assign([2.5, -4.9, 0.8, 5.6]) # storing 1 dimentional list (matrix with 1 row)
 >>> print(m1)
 |   2.5   -4.9    0.8    5.6  |
 
 >>> m2 = px.matrix(1, 1)
->>> m2.assign(-6.1) # storing a numerical value (matrix with one row and one column)
+>>> m2.assign(-6.1) # storing a numerical value (matrix with 1 row and 1 column)
 >>> print(m2)
 |  -6.1  |
 ```
@@ -64,6 +64,24 @@ Printing the matrix
 >>> m.print_col(2) # prints the second column
 (5.0, 7.2)
 ```
+
+
+## Filling the matrix with random values
+```python
+>>> m.randomize(-10, 10) # this stores random values between -10 and 10 in the matrix
+>>> print(m)
+|   8.0    7.4    9.8  |
+|  -0.4    8.4    6.2  |
+```
+
+
+## Filling the matrix with a specified value
+```python
+>>> m.all_to(6)
+|    6      6      6   |
+|    6      6      6   |
+```
+
 
 ## Storing a row or a column of a matrix into another matrix
 ```python
@@ -92,23 +110,6 @@ Matrix m2:
 |   0.7  |
 |  -0.2  |
 |   0.6  |
-```
-
-
-## Filling the matrix with random values
-```python
->>> m.randomize(-10, 10) # this stores random values between -10 and 10 in the matrix
->>> print(m)
-|   8.0    7.4    9.8  |
-|  -0.4    8.4    6.2  |
-```
-
-
-## Filling the matrix with a specified value
-```python
->>> m.all_to(6)
-|    6      6      6   |
-|    6      6      6   |
 ```
 
 
