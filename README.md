@@ -40,18 +40,18 @@ Printing the matrix
 
 ## Storing values to the matrix
 ```python
->>> m.assign([[-2, 5.0, 9.2], [1, 7.2, -6.4]]) # storing 2 dimentional list (matrix with 2 rows and 3 columns)
+>>> m.assign([[-2, 5.0, 9.2], [1, 7.2, -6.4]]) # storing 2 dimensional list (matrix with 2x3 dimension)
 >>> print(m)
 |   -2    5.0    9.2   |
 |    1    7.2   -6.4   |
 
 >>> m1 = px.matrix(1, 4)
->>> m1.assign([2.5, -4.9, 0.8, 5.6]) # storing 1 dimentional list (matrix with 1 row)
+>>> m1.assign([2.5, -4.9, 0.8, 5.6]) # storing 1 dimensional list (matrix with 1x3 dimension)
 >>> print(m1)
 |   2.5   -4.9    0.8    5.6  |
 
 >>> m2 = px.matrix(1, 1)
->>> m2.assign(-6.1) # storing a numerical value (matrix with 1 row and 1 column)
+>>> m2.assign(-6.1) # storing a numerical value (matrix with 1x1 dimension)
 >>> print(m2)
 |  -6.1  |
 ```
@@ -110,6 +110,30 @@ Matrix m2:
 |   0.7  |
 |  -0.2  |
 |   0.6  |
+```
+
+
+## Changing the dimension of a matrix
+```python
+>>> m = matrix(6, 3).randomize(0, 10) # creating a matrix with 6 rows
+>>> m.set_rows(2) # changing the number of rows to 2
+>>> print(m)
+|   8.5    1.9    4.8  |
+|   3.0    1.6    4.1  |
+
+>>> m = matrix(3, 2).randomize(0, 10) # creating a matrix with 2 columns
+>>> m.set_cols(5) # changing the number of columns to 5
+>>> print(m)
+|   2.3    3.6    0.0    0.0    0.0  |
+|   1.8    9.5    0.0    0.0    0.0  |
+|   2.4    9.1    0.0    0.0    0.0  |
+
+>>> m = matrix(2, 3).randomize(0, 10) # creating a 2x3 dimensional matrix
+>>> m.set_dim(3, 4) # changing the dimension to 3x4
+>>> print(m)
+|   6.2    5.7    8.7    0.0  |
+|   4.9    4.6    1.6    0.0  |
+|   0.0    0.0    0.0    0.0  |
 ```
 
 
@@ -223,4 +247,31 @@ Matrix m2:
 Matrix m1 o Matrix m2:
 | -0.28    0.6  |
 |  0.16  -1.06  |
+```
+
+
+## Matrices determinant
+```python
+>>> det = m.determinant() # storing the determinant of the matrix 'm' into the variable 'det'
+```
+- example (2x2 matrix):
+```python
+>>> m = px.matrix(2, 2).randomize(-1, 1)
+>>> print("Matrix m:\n" + str(m))
+>>> print("Det(m):", m.determinant())
+Matrix m:
+|  -0.7   -0.7  |
+|   0.5    0.0  |
+Det(m): 0.35
+```
+- example (3x3 matrix):
+```python
+>>> m = px.matrix(3, 3).randomize(-1, 1)
+>>> print("Matrix m:\n" + str(m))
+>>> print("Det(m):", m.determinant())
+Matrix m:
+|   0.0   -0.9    0.1  |
+|  -0.7    0.3    0.1  |
+|  -0.3   -0.1    0.4  |
+Det(m): -0.21
 ```
