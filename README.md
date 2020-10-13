@@ -8,7 +8,7 @@ By using Pymathrix you can:
 - Perform addition, subtraction and the Hadamard product to matrices
 - Transpose matrices
 - Multiply matrices (Dot product)
-- Calculate the determinant of matrices (only for 2x2 and 3x3 matrices for the moment)
+- Calculate the determinant of matrices (only for 2x2 and 3x3 matrices at the moment)
 
 ## Installation
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pymathrix
